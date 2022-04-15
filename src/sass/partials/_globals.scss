@@ -1,0 +1,29 @@
+html {
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body, button {
+    font-family: 'Overpass', sans-serif;
+}
+
+p {
+    font-size: 15px;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    border-style: none;
+}
