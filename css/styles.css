@@ -41,42 +41,42 @@ body {
   background-color: var(--very-dark-blue);
 }
 
-.container {
+main {
   display: flex;
   justify-content: center;
   align-items: center;
   min-height: 97.5vh;
 }
 
-.ratingcontainer {
+.container {
   background-color: var(--dark-blue);
   width: 325px;
   padding: 25px;
   border-radius: 15px;
 }
-.ratingcontainer .star {
+.container .star {
   width: 42px;
   padding: 12px;
   border-radius: 50%;
   background-color: var(--medium-grey);
   margin-bottom: 15px;
 }
-.ratingcontainer h1 {
+.container h1 {
   color: var(--white);
   font-size: 23px;
   font-weight: 700;
   margin-bottom: 12px;
 }
-.ratingcontainer p {
+.container p {
   color: var(--light-grey);
   font-weight: 400;
   margin-bottom: 25px;
 }
-.ratingcontainer ul {
+.container ul {
   display: flex;
   margin-bottom: 25px;
 }
-.ratingcontainer ul li {
+.container ul li {
   font-size: 15px;
   height: 42px;
   background-color: var(--medium-grey);
@@ -86,11 +86,11 @@ body {
   margin-right: 20px;
   cursor: pointer;
 }
-.ratingcontainer ul li:hover {
+.container ul li:hover {
   background-color: var(--orange);
   color: var(--white);
 }
-.ratingcontainer button {
+.container button {
   font-size: 15px;
   font-weight: 700;
   color: var(--white);
@@ -99,15 +99,15 @@ body {
   padding: 15px 0 12px;
   border-radius: 40px;
 }
-.ratingcontainer button:hover {
+.container button:hover {
   cursor: pointer;
   color: var(--orange);
   background-color: var(--white);
 }
 
 .rating {
-  background-color: var(--light-grey);
-  color: var(--white);
+  background-color: var(--light-grey) !important;
+  color: var(--white) !important;
 }
 
 /*# sourceMappingURL=styles.css.map */
