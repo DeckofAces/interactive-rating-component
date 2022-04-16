@@ -1,38 +1,23 @@
-const ratings = document.querySelectorAll('.ratings');
-// const rating = document.getElementsByTagName('li');
+const ratings = document.querySelectorAll('.rating');
 
+/* For Loop Method */
 // for (let i = 0; i < ratings.length; i++) {
 //     ratings[i].addEventListener('click', () => {
-//         ratings.classList.toggle('rating');
+//         if (ratings[i].classList.contains('rating--clicked')) {
+//             ratings[i].classList.remove('rating--clicked');
+//         } else {
+//             ratings[i].classList.add('rating--clicked');
+//         }
 //     });
 // }
 
-for (let i = 0; i < ratings.length; i++) {
-    ratings[i].addEventListener('click', () => {
-        if (ratings[i].classList.contains('rating')) {
-            ratings[i].classList.remove('rating');
+/* forEach method*/
+ratings.forEach(rating => {
+    rating.addEventListener('click', () => {
+        if (rating.classList.contains('rating--clicked')) {
+            rating.classList.remove('rating--clicked');
         } else {
-            ratings[i].classList.add('rating');
+            rating.classList.add('rating--clicked');
         }
-    });
-}
-
-// rating.addEventListener('click', () => {
-//     if (rating.classList.contains('rating')) {
-//         rating.classList.remove('rating');
-//     } else {
-//         rating.classList.add('rating');
-//     }
-// });
-
-// console.log('Test 1');
-
-// const rating = document.querySelectorAll('li');
-
-// console.log('Test 2')
-
-// rating.addEventListener('click', () => {
-//     rating.setAttribute('class', 'rating');
-// });
-
-// console.log('Test 3');
+    })
+})

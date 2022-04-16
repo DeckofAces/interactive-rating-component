@@ -37,10 +37,10 @@ main {
         font-weight: 400;
         margin-bottom: 25px;
     }
-    ul {
+    .ratings-container {
         display: flex;
         margin-bottom: 25px;
-        li {
+        .rating {
             font-size: 15px;
             // min-width: 39px;
             height: 42px;
@@ -55,24 +55,24 @@ main {
                 color: var(--white);
             }
         }
-    }
-    button {
-        font-size: 15px;
-        font-weight: 700;
-        color: var(--white);
-        background-color: var(--orange);
-        width: 100%;
-        padding: 15px 0 12px;
-        border-radius: 40px;
-        &:hover {
-            cursor: pointer;
-            color: var(--orange);
-            background-color: var(--white);
+        & + button {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--white);
+            background-color: var(--orange);
+            width: 100%;
+            padding: 15px 0 12px;
+            border-radius: 40px;
+            &:hover {
+                cursor: pointer;
+                color: var(--orange);
+                background-color: var(--white);
+            }
         }
     }
 }
 
-.rating {
+.rating--clicked {
     background-color: var(--light-grey) !important;
     color: var(--white) !important;
 }
