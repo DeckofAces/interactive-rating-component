@@ -17,11 +17,14 @@ html {
   padding: 0;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
-body, button {
+body,
+button {
   font-family: "Overpass", sans-serif;
 }
 
@@ -37,6 +40,19 @@ button {
   border-style: none;
 }
 
+h1 {
+  color: var(--white);
+  font-size: 23px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+p {
+  color: var(--light-grey);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
 body {
   background-color: var(--very-dark-blue);
 }
@@ -50,7 +66,8 @@ main {
 
 .container {
   background-color: var(--dark-blue);
-  width: 325px;
+  width: 340px;
+  height: 360px;
   padding: 25px;
   border-radius: 15px;
 }
@@ -59,18 +76,7 @@ main {
   padding: 12px;
   border-radius: 50%;
   background-color: var(--medium-grey);
-  margin-bottom: 15px;
-}
-.container h1 {
-  color: var(--white);
-  font-size: 23px;
-  font-weight: 700;
   margin-bottom: 12px;
-}
-.container p {
-  color: var(--light-grey);
-  font-weight: 400;
-  margin-bottom: 25px;
 }
 .container .ratings-container {
   display: flex;
@@ -107,6 +113,27 @@ main {
   cursor: pointer;
   color: var(--orange);
   background-color: var(--white);
+}
+
+.thankyou-container {
+  background-color: var(--dark-blue);
+  width: 340px;
+  height: 360px;
+  padding: 25px;
+  border-radius: 15px;
+  text-align: center;
+  display: none;
+}
+.thankyou-container img {
+  margin-bottom: 25px;
+}
+.thankyou-container .selected-text {
+  color: var(--orange);
+  background-color: var(--medium-grey);
+  border-radius: 15px;
+  padding: 5px 0 3px;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 /*# sourceMappingURL=styles.css.map */

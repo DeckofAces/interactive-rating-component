@@ -8,11 +8,14 @@ html {
     padding: 0;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
-body, button {
+body,
+button {
     font-family: 'Overpass', sans-serif;
 }
 
@@ -26,4 +29,17 @@ li {
 
 button {
     border-style: none;
+}
+
+h1 {
+    color: var(--white);
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+p {
+    color: var(--light-grey);
+    font-weight: 400;
+    margin-bottom: 20px;
 }

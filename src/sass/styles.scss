@@ -14,8 +14,8 @@ main {
 
 .container {
     background-color: var(--dark-blue);
-    width: 325px;
-    // height: 360px;
+    width: 340px;
+    height: 360px;
     padding: 25px;
     border-radius: 15px;
 
@@ -25,20 +25,7 @@ main {
         padding: 12px;
         border-radius: 50%;
         background-color: var(--medium-grey);
-        margin-bottom: 15px;
-    }
-
-    h1 {
-        color: var(--white);
-        font-size: 23px;
-        font-weight: 700;
         margin-bottom: 12px;
-    }
-
-    p {
-        color: var(--light-grey);
-        font-weight: 400;
-        margin-bottom: 25px;
     }
 
     .ratings-container {
@@ -83,4 +70,29 @@ main {
             }
         }
     }
+
+}
+
+.thankyou-container {
+    background-color: var(--dark-blue);
+    width: 340px;
+    height: 360px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+
+    img {
+        margin-bottom: 25px;
+    }
+
+    .selected-text {
+        color: var(--orange);
+        background-color: var(--medium-grey);
+        border-radius: 15px;
+        padding: 5px 0 3px;
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    display: none;
 }
